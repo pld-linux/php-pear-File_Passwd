@@ -24,7 +24,7 @@ Provides methods to manipulate standard Unix, SMB server,
 AuthUser (.htpasswd), AuthDigest (.htdigest) and CVS pserver password
 files.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Dostarcza metody do manipulacji na standardowych UNIX-owych plikach
