@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
 Name:		php-pear-%{_pearname}
-Version:	0.9.0
+Version:	0.9.1
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	6f518a3ac11060942b3cef9c0b7f0ff1
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	c915f6b99b58cdf98c1815976e1ec049
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
