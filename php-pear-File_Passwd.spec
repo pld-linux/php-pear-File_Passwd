@@ -1,13 +1,13 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          File
-%define         _subclass       Passwd
+%define		_class		File
+%define		_subclass	Passwd
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
 Name:		php-pear-%{_pearname}
-%define _pre	b2
+%define	_pre	b2
 Version:	1.0
 Release:	1
 License:	PHP 2.02
