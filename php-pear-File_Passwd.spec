@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
 Name:		php-pear-%{_pearname}
-Version:	0.9.2
+Version:	0.9.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -19,14 +19,16 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Provides methods to manipulate standard UNIX passwd, .htpasswd and CVS
-pserver passwd files.
+Provides methods to manipulate standard Unix, SMB server,
+AuthUser (.htpasswd), AuthDigest (.htdigest) and CVS pserver password
+files.
 
 This class has in PEAR status: %{_status}.
 
 %description -l pl
 Dostarcza metody do manipulacji na standardowych UNIX-owych plikach
-passwd, .htpasswd oraz na plikach passwd CVS pserver.
+passwd, serwera SMB, AuthUser (.htpasswd), AuthDigest (.htdigest) oraz
+na plikach passwd CVS pserver.
 
 Ta klasa ma w PEAR status: %{_status}.
 
