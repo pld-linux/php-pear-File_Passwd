@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          File
 %define         _subclass       Passwd
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
@@ -20,9 +21,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Provides methods to manipulate standard UNIX passwd, .htpasswd and CVS
 pserver passwd files.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Dostarcza metody do manipulacji na standardowych UNIX-owych plikach
 passwd, .htpasswd oraz na plikach passwd CVS pserver.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
