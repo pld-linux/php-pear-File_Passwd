@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
 Name:		php-pear-%{_pearname}
-Version:	1.1.5
-Release:	1.1
+Version:	1.1.6
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2821181aa1c1eaeba80c22378ea4c76c
+# Source0-md5:	e4dafa1eae878ff83d349b28719e8e29
 URL:		http://pear.php.net/package/File_Passwd/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
