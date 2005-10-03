@@ -15,7 +15,10 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	e4dafa1eae878ff83d349b28719e8e29
 URL:		http://pear.php.net/package/File_Passwd/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.0.6
+Requires:	php-pcre
 Requires:	php-pear
+Requires:	php-pear-PEAR
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
