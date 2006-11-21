@@ -8,7 +8,7 @@ Summary:	%{_pearname} - manipulate password files
 Summary(pl):	%{_pearname} - manipulacje na plikach z has³ami
 Name:		php-pear-%{_pearname}
 Version:	1.1.6
-Release:	3
+Release:	4
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -18,8 +18,8 @@ URL:		http://pear.php.net/package/File_Passwd/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 BuildArch:	noarch
@@ -29,9 +29,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_noautoreq	'pear(Crypt/CHAP.*)'
 
 %description
-Provides methods to manipulate standard Unix, SMB server,
-AuthUser (.htpasswd), AuthDigest (.htdigest) and CVS pserver password
-files.
+Provides methods to manipulate standard Unix, SMB server, AuthUser
+(.htpasswd), AuthDigest (.htdigest) and CVS pserver password files.
 
 In PEAR status of this package is: %{_status}.
 
