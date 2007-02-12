@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - manipulate password files
-Summary(pl):	%{_pearname} - manipulacje na plikach z has≥ami
+Summary(pl.UTF-8):   %{_pearname} - manipulacje na plikach z has≈Çami
 Name:		php-pear-%{_pearname}
 Version:	1.1.6
 Release:	4
@@ -34,7 +34,7 @@ Provides methods to manipulate standard Unix, SMB server, AuthUser
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
+%description -l pl.UTF-8
 Dostarcza metody do manipulacji na standardowych UNIX-owych plikach
 passwd, serwera SMB, AuthUser (.htpasswd), AuthDigest (.htdigest) oraz
 na plikach passwd CVS pserver.
@@ -43,7 +43,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -52,7 +52,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
