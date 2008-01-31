@@ -8,7 +8,7 @@ Summary:	%{_pearname} - manipulate password files
 Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach z hasłami
 Name:		php-pear-%{_pearname}
 Version:	1.1.6
-Release:	4
+Release:	5
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
