@@ -35,7 +35,7 @@ Provides methods to manipulate standard Unix, SMB server, AuthUser
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
-Dostarcza metody do manipulacji na standardowych UNIX-owych plikach
+Dostarcza metody do manipulacji na standardowych Uniksowych plikach
 passwd, serwera SMB, AuthUser (.htpasswd), AuthDigest (.htdigest) oraz
 na plikach passwd CVS pserver.
 
