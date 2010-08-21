@@ -3,25 +3,24 @@
 %define		_subclass	Passwd
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - manipulate password files
 Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach z hasłami
 Name:		php-pear-%{_pearname}
 Version:	1.1.7
-Release:	1
-Epoch:		0
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	b11d5dac02ddd93fdfdd4756a0868afe
 URL:		http://pear.php.net/package/File_Passwd/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
+Suggests:	php-pear-Crypt_CHAP
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,9 +44,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
