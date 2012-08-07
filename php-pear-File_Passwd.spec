@@ -1,13 +1,13 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		File
 %define		_subclass	Passwd
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	File_Passwd
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - manipulate password files
 Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach z hasłami
 Name:		php-pear-%{_pearname}
 Version:	1.1.7
-Release:	3
+Release:	4
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +16,8 @@ URL:		http://pear.php.net/package/File_Passwd/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 Suggests:	php-pear-Crypt_CHAP
@@ -61,6 +61,6 @@ fi
 %defattr(644,root,root,755)
 %doc install.log optional-packages.txt
 %{php_pear_dir}/.registry/*.reg
-%dir %{php_pear_dir}/%{_class}/%{_subclass}
-%{php_pear_dir}/%{_class}/*.php
-%{php_pear_dir}/%{_class}/%{_subclass}/*.php
+%dir %{php_pear_dir}/File/Passwd
+%{php_pear_dir}/File/*.php
+%{php_pear_dir}/File/Passwd/*.php
