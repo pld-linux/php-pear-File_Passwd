@@ -2,7 +2,6 @@
 %define		_subclass	Passwd
 %define		_status		stable
 %define		_pearname	File_Passwd
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - manipulate password files
 Summary(pl.UTF-8):	%{_pearname} - manipulacje na plikach z hasłami
 Name:		php-pear-%{_pearname}
